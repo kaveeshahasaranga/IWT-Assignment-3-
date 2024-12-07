@@ -1,0 +1,26 @@
+<?php
+require 'conection.php';
+
+$sql="SELECT id,name,category,ptime,ingredients,introduction,email FROM finalcrudtable ";
+
+$result=$con->query($sql);
+
+if ($result->num_rows>0)
+{
+    echo "<table boder='1'>";
+    while($row=$result->fetch_assoc())
+    {
+        echo "<tr>";
+        echo "<td>".$row["id"]."</td>"."<td>".$row["name"]."</td>"."<td>".$row["category"]."</td>"."<td>".$row["ptime"]."</td>"."<td>".$row["ingredients"]."</td>"."<td>".$row["introduction"]."</td>"."<td>".$row["email"]."</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+
+else
+{
+    echo "No results";
+}
+
+$con->close();
+?>

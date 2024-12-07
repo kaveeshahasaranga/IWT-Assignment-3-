@@ -1,0 +1,86 @@
+create database foodify;
+
+CREATE TABLE Registered_User
+(
+   UserID varchar(15) not null,
+   F_name varchar(20) not null,
+   L_name varchar(20) not null,
+   City varchar(10) not null,
+   Country varchar(20) not null,
+   Email varchar(40) not null,
+   Passcode char(8) not null,
+   Gender char(1),
+   DOB date, 
+   RecipeID varchar (10),
+   
+   CONSTRAINT UserPK Primary Key (UserID),
+   CONSTRAINT UserFK Foreign Key (RecipeID) References Recipe(RecipeID)
+   
+);
+
+CREATE TABLE Recipe
+(
+	RecipeID varchar(10) not null,
+	Title varchar (50),
+	Description varchar (200),
+	Instructions varchar (1000),
+	CookingTime varchar (6),
+	PreparationTime varchar(6),
+	Status varchar(8),
+	AdminID varchar (4),
+
+	CONSTRAINT RecipePK PRIMARY KEY (RecipeID)
+);
+
+CREATE TABLE Ingredient
+(
+	IngredientID varchar(5) not null,
+	Name varchar(20),
+	Quantity varchar(8),
+
+	CONSTRAINT IngredientPK PRIMARY KEY (IngredientID)
+);
+
+CREATE TABLE Recipe_Developer
+(
+	DeverloperID varchar(5) not null,
+	Name varchar(20),
+	password char(8)not null,
+	Email varchar(40)not null,
+	Address varchar(60)not null,
+);
+
+CREATE TABLE eCookbook
+(
+	CookbookID varchar(5)not null,
+	Title varchar(50),
+	Description varchar(150),
+	Author varchar(59),
+	Publication_date varchar(10)not null,
+	Price varchar(5)not null,
+	Tags varchar(4)not null,
+);
+
+
+CREATE TABLE Payment
+(
+	PaymentID varchar(10),
+	Payment_method varchar(15),
+	Paid_amount varchar(5),
+	Date varchar(10)not null,
+	UserID varchar(10)not null,
+
+	CONSTRAINT PaymentPK PRIMARY KEY(UserID)
+);
+
+CREATE TABLE Sales_Report
+(
+	ReportID varchar(10),
+	Revenue varchar(10),
+	No_of_book_sold varchar(3),
+	Date varchar(10),
+	AdminID varchar(10),
+	Total_profit varchar(5),
+
+	CONSTRAINT Sales_ReportPK PRIMARY KEY (AdminID)
+);

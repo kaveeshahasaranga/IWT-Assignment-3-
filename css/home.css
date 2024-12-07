@@ -1,0 +1,82 @@
+body
+        {
+            background-color: rgb(235, 236, 197) ;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+        }
+
+        .let
+        {
+           display: flex;
+           justify-content: space-around;
+           margin-bottom: 30px;
+        }
+
+        .topic p
+        {
+            padding-top: 80px;
+            font-size: 60px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: 'Baguet Script';
+        }
+
+        .recipe
+        {
+            width: 50%;
+            height: 350px; 
+            padding: 35px;
+            box-shadow: 0cap 0px 10px 0px;
+            border-radius: 6%;
+            background-image: url("https://images.pexels.com/photos/4033657/pexels-photo-4033657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");                        
+        }
+
+        .recipe img
+        {
+            width:250px; 
+            height:200px;
+            border-radius: 6%;
+        }
+
+        .recipe h2
+        {
+            text-align: center;
+            margin: 10px 0; 
+            text-shadow: #6a6868;
+            font-weight: 100px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+        }
+
+        .trans div
+        {
+            margin:0 auto;
+            max-width: 100%;
+            width: 100%;
+            
+        }
+
+        .trans
+        {    
+            padding: 40px;
+            margin: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0;
+            width: 90%;
+            height: 100%;
+            
+        }
+
+        h1
+        {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-family: 'Cinzel';
+            text-shadow: 2px 2px 4px #000000;
+            font-weight: 200px;
+            font-size: 40px;
+
+        }

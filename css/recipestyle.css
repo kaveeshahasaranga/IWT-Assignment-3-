@@ -1,0 +1,59 @@
+        .lap1
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: -400px;
+           
+        }
+
+        .lap2
+        {
+            width: 50%;
+            height: 290px; 
+            padding: 10px;
+            box-shadow: 0cap 0px 10px 0px;
+            border-radius: 3%;
+            margin: 10px;
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;  
+
+        }
+
+
+        .lap2 h1
+        {
+            text-align: center;
+            margin: 10px 0; 
+            text-shadow: #696464;
+            color: rgb(7, 6, 6);
+            
+        }
+
+        .lap2 img
+        {
+            width:350px; 
+            height:280px;
+            border-radius: 6%;
+        }
+
+        .trans div
+        {
+            margin:0 auto;
+            max-width: 100%;
+            width: 100%;
+            
+        }
+
+        .trans
+        {    
+            padding: 40px;
+            margin: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0;
+            width: 90%;
+            height: 100%;
+        }
+
+        

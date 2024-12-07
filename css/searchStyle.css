@@ -1,0 +1,61 @@
+/*Search bar styling*/
+.search{
+    width : 700px;
+    display : flex;
+    align-items: center;
+    margin: auto;
+    padding : 13px;
+    border-radius: 28px;
+    background: rgb(227, 242, 222);
+    transition: box-shadow 0.25s;
+}
+
+.search:focus-within{
+    box-shadow : 0 0 8px rgb(132, 158, 136);
+}
+
+.search-input{
+    font-size:16px;
+    font-family:'Cinzel';
+    color: rgb(52, 48, 48);
+    margin-left: 13px;
+    font-style: italic;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+
+.search-icon{
+    color: rgb(113, 110, 110);
+    width: 25px;
+    height: 25px;
+}
+
+.header-font{
+    font-family: 'Cinzel';
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+
+
+.filters{
+    width: 50%;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.filter-table{
+    border: none;
+    width: 1000px;
+    margin-top: 2%;
+    margin-left: 33%;
+    padding: 20px;
+    text-align: center;    
+
+}
+
+
+

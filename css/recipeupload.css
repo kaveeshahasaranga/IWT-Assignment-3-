@@ -1,0 +1,104 @@
+body
+{
+    background-image: url("https://img.freepik.com/free-photo/overhead-view-blank-spiral-notepad-with-italian-pasta-ingredients-against-black-textured-backdrop_23-2148090997.jpg?w=900&t=st=1714974530~exp=1714975130~hmac=321c35bf800ef27d14e5e67b9114f365b0a3971aab53144ccb70e74a38765905") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trans div
+{
+    margin:0 auto;
+    max-width: 100%;
+    width: 80%;
+    height: auto; 
+    
+    
+}
+
+.trans
+{    
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0;
+    width: 70%;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/2824173/pexels-photo-2824173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");         
+    background-size: cover;
+    backface-visibility: visible;
+    
+}
+
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.form input
+{
+    border: 3px solid rgba(35, 34, 34, 0.4);
+    box-shadow: 1px 1px 2px rgba(35,34,34,0.4);
+    transform: translateY(50px);
+    display: block;
+    margin: 15px auto 0PX auto;
+    width: 60%;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.form input[type="submit"]
+{
+    
+    background:#4caf50;
+    width: 35%;
+    color:rgb(255, 255, 255);
+    border:none;
+    font-size: 25px;
+    font-weight: 600;
+    height: 50px;
+    border-radius: 4px;
+    
+}
+
+::placeholder
+{
+    position: relative;
+    text-align: justify;
+    left: 20px;
+    
+}
+
+.title
+{
+    transform:translate(30px,40px);
+}
+
+.title p
+{
+    font-size: 70px ;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fit p
+{
+    font-size: 20px ;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+        
